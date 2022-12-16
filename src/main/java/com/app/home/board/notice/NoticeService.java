@@ -119,8 +119,8 @@ public class NoticeService {
 	public List<BoardVO> getListByHit(Pager pager) throws Exception {
 		
 		Long totalCount = boardDAO.getTotalCount(pager);
-		pager.getnum(totalCount);
-		pager.getRownum();
+		pager.getNum(totalCount);
+		pager.getRowNum();
 		
 		return boardDAO.getListByHit(pager);
 	}
